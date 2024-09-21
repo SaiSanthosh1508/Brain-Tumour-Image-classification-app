@@ -71,5 +71,18 @@ if file is not None:
 #     st.progress(output_arr[1],text='Meningioma')
 #     st.progress(output_arr[2],text='No Tumour')
 #     st.progress(output_arr[3],text='Pituitary')
+densenet_url = "https://drive.google.com/uc?id=1alRU89gEjm1hc1TJZ965Sg40gJrXap5g"
+vgg19_url = "https://drive.google.com/uc?id=1E_qVWwNkDj-vbYO0Rlx4JoexCxGtIw9_"
+xception_url = "https://drive.google.com/uc?id=1YMo2BkbuqCwoRi6-XfT0P5SIWyf82VEE"
+effnet_url = "https://drive.google.com/uc?id=1xsk9pUCAQuztZyaa5UJwAq4cwxChUIfl"
 
-gdown.download()
+with st.spinner('Getting the models ready.....'):
+         gdown.download(densenet_url,"densenet169_model.keras")
+         gdown.download(vgg19_url,"VGG19_model.keras")
+         gdown.download(xception_url,"xception_model.keras")
+         gdown.download(effnet_url,"EfficientNetV2B2_model.keras")
+         densenet = tf.keras.models.load_model("densenet169_model.keras")
+         vgg19 = tf.keras.models.load_model("VGG19_model.keras")
+         xception = tf.keras.models.load_model("xception_model.keras")
+         effnet = tf.keras.models.load_model("EfficientNetV2B2_model.keras")
+         
