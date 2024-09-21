@@ -88,4 +88,4 @@ if click:
          st.progress(output_arr[2],text='No Tumour')
          st.progress(output_arr[3],text='Pituitary')
 
-         st.header("Model Prediction:",class_name_predicted)
+         st.header(f"Model Prediction:  {class_name_predicted}")
