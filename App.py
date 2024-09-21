@@ -80,12 +80,12 @@ if click:
                   effnet = tf.keras.models.load_model("EfficientNetV2B2_model.keras")
          st.success("Models loaded successfully")
     
-         st.subheader('Output')
+         st.subheader('Output Probability')
          with st.spinner('Predicting.....'):
                  output_arr,class_name_predicted = ensemble_output(model_input,densenet,vgg19,xception,effnet)
-         st.progress(output_arr[0],text='Glioma')
-         st.progress(output_arr[1],text='Meningioma')
-         st.progress(output_arr[2],text='No Tumour')
-         st.progress(output_arr[3],text='Pituitary')
+         st.metric(label="Glioma", value=f"{output_arr[0] * 100:.2f}%")
+         st.metric(label="Meningioma", value=f"{output_arr[1] * 100:.2f}%")
+         st.metric(label="No Tumour", value=f"{output_arr[2] * 100:.2f}%")
+         st.metric(label="Pituitary", value=f"{output_arr[3] * 100:.2f}%")
 
          st.header(f"Model Prediction:  {class_name_predicted}")
