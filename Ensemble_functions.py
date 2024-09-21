@@ -21,7 +21,7 @@ def image_preprocess(image):
 
 def ensemble_output(image_input,densenet,vgg19,xception,effnet):
 
-  class_names = ['glioma', 'meningioma', 'notumor', 'pituitary']
+  class_names = ['Glioma', 'Meningioma', 'No Tumour', 'Pituitary']
 
   # Add additional dimension in axis=0 to pass to the models as input
   image_input = tf.expand_dims(image_input,axis=0)
