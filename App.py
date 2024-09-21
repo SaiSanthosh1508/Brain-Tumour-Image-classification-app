@@ -60,7 +60,7 @@ xception_url = "https://drive.google.com/uc?id=1YMo2BkbuqCwoRi6-XfT0P5SIWyf82VEE
 effnet_url = "https://drive.google.com/uc?id=1xsk9pUCAQuztZyaa5UJwAq4cwxChUIfl"
 
 st.header(" ")
-st.header(" ")
+
 
 left, middle, right = st.columns([1,4,1])
 with middle:
