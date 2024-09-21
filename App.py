@@ -18,13 +18,19 @@ st.divider()
 # Option to download model data images
 st.subheader('Download the images the model has trained on')
 
-file_path = 'C:\\Users\\santh\\OneDrive\\Desktop\\Brain Tumour Paper-1\\BrainTumor_1.zip'
+# file_path = 'C:\\Users\\santh\\OneDrive\\Desktop\\Brain Tumour Paper-1\\BrainTumor_1.zip'
 
-with open(file_path,'rb') as f:
-    st.download_button(label='Download data',
-                       file_name='BrainTumor_1.zip',
-                       data=f,
-                       mime='application/zip')
+# with open(file_path,'rb') as f:
+#     st.download_button(label='Download data',
+#                        file_name='BrainTumor_1.zip',
+#                        data=f,
+#                        mime='application/zip')
+gdown.download("https://drive.google.com/uc?id=11R-D1robYjdyMZ4KooWuAlZH1WyRpCdl","BrainTumor_1.zip")
+with open("BrainTumor_1.zip") as f:
+         st.download_button(label='download data',
+                           data = f,
+                           mime='application/zip')
+
 
 st.divider()
 st.subheader('Data Visualization')
@@ -52,22 +58,23 @@ if file is not None:
         st.image(preprocessed_img_np, width=350)
 
 
-click = st.button('Predict')
-output_arr = 0
-class_name_predicted = ""
-if click:
-    ## Loading the models
-    loading_flag = 0
-    with st.spinner('Loading models....'):
-        densenet,vgg19,xception,effnet = load_models()
-        loading_flag = 1
-    st.success('Models loaded successfully')
+# click = st.button('Predict')
+# output_arr = 0
+# class_name_predicted = ""
+# if click:
+#     ## Loading the models
+#     loading_flag = 0
+#     with st.spinner('Loading models....'):
+#         densenet,vgg19,xception,effnet = load_models()
+#         loading_flag = 1
+#     st.success('Models loaded successfully')
     
-    st.subheader('Output')
-    with st.spinner('Predicting.....'):
-        output_arr,class_name_predicted = ensemble_output(model_input,densenet,vgg19,xception,effnet)
-    st.progress(output_arr[0],text='Glioma')
-    st.progress(output_arr[1],text='Meningioma')
-    st.progress(output_arr[2],text='No Tumour')
-    st.progress(output_arr[3],text='Pituitary')
-    
+#     st.subheader('Output')
+#     with st.spinner('Predicting.....'):
+#         output_arr,class_name_predicted = ensemble_output(model_input,densenet,vgg19,xception,effnet)
+#     st.progress(output_arr[0],text='Glioma')
+#     st.progress(output_arr[1],text='Meningioma')
+#     st.progress(output_arr[2],text='No Tumour')
+#     st.progress(output_arr[3],text='Pituitary')
+
+gdown.download()
