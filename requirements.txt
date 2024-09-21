@@ -3,4 +3,5 @@ pandas
 numpy
 seaborn
 tensorflow
-PIL
+Pillow
+gdown
