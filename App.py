@@ -9,8 +9,8 @@ from PIL import Image
 import gdown
 
 st.title('🧠 Brain Tumour Image Classification')
-
-st.success(st.header(f"Model Prediction:  {class_name_predicted}"))
+cla = 98976
+st.success(st.header(f"Model Prediction:  {cla}"))
 st.subheader("Description")
 st.write("This is mult-label image classification model, Given an image the model classifies it into\n\n"\
          "\n1. Glioma\n2. Meningioma\n 3. No Tumour\n 4. Pituitary")
