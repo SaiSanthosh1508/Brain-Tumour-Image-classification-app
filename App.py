@@ -47,7 +47,7 @@ if file is not None:
     preprocessed_img = image_preprocess(image_array)
     preprocessed_img_np = preprocessed_img.numpy()
     model_input = preprocessed_img_np
-    col1, col2, col3 = st.columns([1, 2, 1])  # Adjust the ratios if needed
+    col1, col2, col3 = st.columns([1, 5, 1])  # Adjust the ratios if needed
 
     with col2:  # Center column
         st.image(preprocessed_img_np, width=350)
