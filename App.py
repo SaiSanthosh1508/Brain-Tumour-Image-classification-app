@@ -32,7 +32,7 @@ data_df = pd.DataFrame(data={'Glioma':5284,'Meningioma':5356,"No Tumour":5828,"P
 
 if on:
     st.bar_chart(data=data_df,color=['#06C','#4CB140','#009596','#F0AB00'],stack=False)
-
+st.header(' ')
 st.header('Upload the image')
 file = st.file_uploader(label='Image file',
                  label_visibility='hidden'
