@@ -19,15 +19,9 @@ st.divider()
 # Option to download model data images
 st.subheader('Download the images the model has trained on')
 
-# file_path = 'C:\\Users\\santh\\OneDrive\\Desktop\\Brain Tumour Paper-1\\BrainTumor_1.zip'
 
-# with open(file_path,'rb') as f:
-#     st.download_button(label='Download data',
-#                        file_name='BrainTumor_1.zip',
-#                        data=f,
-#                        mime='application/zip')
 gdown.download("https://drive.google.com/uc?id=11R-D1robYjdyMZ4KooWuAlZH1WyRpCdl","BrainTumor_1.zip")
-with open("BrainTumor_1.zip") as f:
+with open("BrainTumor_1.zip","rb") as f:
          st.download_button(label='download data',
                            data = f,
                            mime='application/zip')
