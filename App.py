@@ -96,7 +96,7 @@ if click:
          st.markdown("""
     <style>
     .stAlert {
-        font-size: 24px; /* Change the size as needed */
+        font-size: 48px; /* Change the size as needed */
     }
     </style>
     """, unsafe_allow_html=True)
