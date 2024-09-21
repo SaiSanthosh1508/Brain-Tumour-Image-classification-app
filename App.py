@@ -93,14 +93,6 @@ if click:
          st.progress(output_arr[3])
          st.subheader(" ")
 
-         st.markdown("""
-    <style>
-    .stAlert {
-        font-size: 48px; /* Change the size as needed */
-    }
-    </style>
-    """, unsafe_allow_html=True)
-
          
          st.success(f"Prediction: {class_name_predicted}")
 
