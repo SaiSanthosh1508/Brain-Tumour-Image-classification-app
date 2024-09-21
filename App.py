@@ -18,7 +18,7 @@ st.write("This is mult-label image classification model, Given an image the mode
 st.divider()
 # Option to download model data images
 st.subheader('Download the images the model has trained on')
-st.snow()
+
 
 # gdown.download("https://drive.google.com/file/d/1LvSKvWVLMu11lD8cly-4Fj5aboQPdmGr/view?usp=sharing",output = "BrainTumor_1.zip")
 # with open("BrainTumor_1.zip","rb") as f:
@@ -47,7 +47,7 @@ if file is not None:
     preprocessed_img = image_preprocess(image_array)
     preprocessed_img_np = preprocessed_img.numpy()
     model_input = preprocessed_img_np
-    col1, col2, col3 = st.columns([1, 5, 1])  # Adjust the ratios if needed
+    col1, col2, col3 = st.columns([1, 3, 1])  # Adjust the ratios if needed
 
     with col2:  # Center column
         st.image(preprocessed_img_np, width=350)
@@ -60,7 +60,7 @@ xception_url = "https://drive.google.com/uc?id=1YMo2BkbuqCwoRi6-XfT0P5SIWyf82VEE
 effnet_url = "https://drive.google.com/uc?id=1xsk9pUCAQuztZyaa5UJwAq4cwxChUIfl"
 
 
-left, middle, right = st.columns([1,2,1])
+left, middle, right = st.columns([1,5,1])
 with middle:
          click = st.button('Predict')
 
