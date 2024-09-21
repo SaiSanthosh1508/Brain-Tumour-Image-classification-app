@@ -9,8 +9,7 @@ from PIL import Image
 import gdown
 
 st.title('🧠 Brain Tumour Image Classification')
-cla = 98976
-st.success(st.header(f"Model Prediction:  {cla}"))
+
 st.subheader("Description")
 st.write("This is mult-label image classification model, Given an image the model classifies it into\n\n"\
          "\n1. Glioma\n2. Meningioma\n 3. No Tumour\n 4. Pituitary")
@@ -92,18 +91,8 @@ if click:
          st.progress(output_arr[2])
          st.metric(label="Pituitary", value=f"{output_arr[3] * 100:.2f}%")
          st.progress(output_arr[3])
-         # labels = ["Glioma", "Meningioma", "No Tumour", "Pituitary"]
-         # for i in range(len(output_arr)):
-         #     # Create columns for each metric and progress bar to align them
-         #     col1, col2 = st.columns([1, 5])
-    
-         #     # Display metric in the first column
-         #     with col1:
-         #         st.metric(label=labels[i], value=f"{output_arr[i] * 100:.2f}%")
-    
-         #     # Display progress bar in the second column
-         #     with col2:
-         #         st.progress(output_arr[i])
+         st.subheader(" ")
+         st.success(f"Prediction: {class_name_predicted}")
 
          
 
