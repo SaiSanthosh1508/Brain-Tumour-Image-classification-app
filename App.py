@@ -61,8 +61,7 @@ effnet_url = "https://drive.google.com/uc?id=1xsk9pUCAQuztZyaa5UJwAq4cwxChUIfl"
 
 st.header(" ")
 st.header(" ")
-st.header(" ")
-st.header(" ")
+
 left, middle, right = st.columns([1,4,1])
 with middle:
          click = st.button('Predict',use_container_width=True)
