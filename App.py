@@ -20,7 +20,7 @@ st.divider()
 st.subheader('Download the images the model has trained on')
 
 
-gdown.download("https://drive.google.com/uc?id=11R-D1robYjdyMZ4KooWuAlZH1WyRpCdl","BrainTumor_1.zip")
+gdown.download(id = "11R-D1robYjdyMZ4KooWuAlZH1WyRpCdl=",output = "BrainTumor_1.zip")
 with open("BrainTumor_1.zip","rb") as f:
          st.download_button(label='download data',
                            data = f,
