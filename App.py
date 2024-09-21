@@ -18,13 +18,13 @@ st.write("This is mult-label image classification model, Given an image the mode
 st.divider()
 # Option to download model data images
 st.subheader('Download the images the model has trained on')
+st.snow()
 
-
-gdown.download("https://drive.google.com/file/d/1LvSKvWVLMu11lD8cly-4Fj5aboQPdmGr/view?usp=sharing",output = "BrainTumor_1.zip")
-with open("BrainTumor_1.zip","rb") as f:
-         st.download_button(label='download data',
-                           data = f,
-                           mime='application/zip')
+# gdown.download("https://drive.google.com/file/d/1LvSKvWVLMu11lD8cly-4Fj5aboQPdmGr/view?usp=sharing",output = "BrainTumor_1.zip")
+# with open("BrainTumor_1.zip","rb") as f:
+#          st.download_button(label='download data',
+#                            data = f,
+#                            mime='application/zip')
 
 
 st.divider()
@@ -53,36 +53,35 @@ if file is not None:
         st.image(preprocessed_img_np, width=350)
 
 
-# click = st.button('Predict')
-# output_arr = 0
-# class_name_predicted = ""
-# if click:
-#     ## Loading the models
-#     loading_flag = 0
-#     with st.spinner('Loading models....'):
-#         densenet,vgg19,xception,effnet = load_models()
-#         loading_flag = 1
-#     st.success('Models loaded successfully')
-    
-#     st.subheader('Output')
-#     with st.spinner('Predicting.....'):
-#         output_arr,class_name_predicted = ensemble_output(model_input,densenet,vgg19,xception,effnet)
-#     st.progress(output_arr[0],text='Glioma')
-#     st.progress(output_arr[1],text='Meningioma')
-#     st.progress(output_arr[2],text='No Tumour')
-#     st.progress(output_arr[3],text='Pituitary')
+
 densenet_url = "https://drive.google.com/uc?id=1alRU89gEjm1hc1TJZ965Sg40gJrXap5g"
 vgg19_url = "https://drive.google.com/uc?id=1E_qVWwNkDj-vbYO0Rlx4JoexCxGtIw9_"
 xception_url = "https://drive.google.com/uc?id=1YMo2BkbuqCwoRi6-XfT0P5SIWyf82VEE"
 effnet_url = "https://drive.google.com/uc?id=1xsk9pUCAQuztZyaa5UJwAq4cwxChUIfl"
 
-# with st.spinner('Getting the models ready.....'):
-#          gdown.download(densenet_url,"densenet169_model.keras")
-#          gdown.download(vgg19_url,"VGG19_model.keras")
-#          gdown.download(xception_url,"xception_model.keras")
-#          gdown.download(effnet_url,"EfficientNetV2B2_model.keras")
-#          densenet = tf.keras.models.load_model("densenet169_model.keras")
-#          vgg19 = tf.keras.models.load_model("VGG19_model.keras")
-#          xception = tf.keras.models.load_model("xception_model.keras")
-#          effnet = tf.keras.models.load_model("EfficientNetV2B2_model.keras")
+
          
+# click = st.button('Predict')
+# output_arr = 0
+# class_name_predicted = ""
+# if click:
+#          with st.spinner('Getting the models ready.....'):
+#                   gdown.download(densenet_url,"densenet169_model.keras")
+#                   gdown.download(vgg19_url,"VGG19_model.keras")
+#                   gdown.download(xception_url,"xception_model.keras")
+#                   gdown.download(effnet_url,"EfficientNetV2B2_model.keras")
+#                   densenet = tf.keras.models.load_model("densenet169_model.keras")
+#                   vgg19 = tf.keras.models.load_model("VGG19_model.keras")
+#                   xception = tf.keras.models.load_model("xception_model.keras")
+#                   effnet = tf.keras.models.load_model("EfficientNetV2B2_model.keras")
+#          st.success("Models loaded successfully")
+    
+#          st.subheader('Output')
+#          with st.spinner('Predicting.....'):
+#                  output_arr,class_name_predicted = ensemble_output(model_input,densenet,vgg19,xception,effnet)
+#          st.progress(output_arr[0],text='Glioma')
+#          st.progress(output_arr[1],text='Meningioma')
+#          st.progress(output_arr[2],text='No Tumour')
+#          st.progress(output_arr[3],text='Pituitary')
+
+#          st.header(class_name_predicted)
