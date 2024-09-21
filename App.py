@@ -18,8 +18,7 @@ st.write("This is mult-label image classification model, Given an image the mode
 st.divider()
 st.subheader('Download the images the model has trained on')
 
-# gdown.download("https://drive.google.com/file/d/1LvSKvWVLMu11lD8cly-4Fj5aboQPdmGr/view?usp=sharing",output = "BrainTumor_1.zip")
-gdown.download(id="1LvSKvWVLMu11lD8cly-4Fj5aboQPdmGr",output="BrainTumor_1.zip")
+gdown.download("https://drive.google.com/file/d/1LvSKvWVLMu11lD8cly-4Fj5aboQPdmGr/view?usp=sharing",output = "BrainTumor_1.zip")
 with open("BrainTumor_1.zip","rb") as f:
          st.download_button(label='download data',
                            data = f,
