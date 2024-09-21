@@ -92,6 +92,16 @@ if click:
          st.metric(label="Pituitary", value=f"{output_arr[3] * 100:.2f}%")
          st.progress(output_arr[3])
          st.subheader(" ")
+
+         st.markdown("""
+    <style>
+    .stAlert {
+        font-size: 24px; /* Change the size as needed */
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+         
          st.success(f"Prediction: {class_name_predicted}")
 
          
