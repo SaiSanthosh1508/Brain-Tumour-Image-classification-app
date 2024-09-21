@@ -60,9 +60,9 @@ xception_url = "https://drive.google.com/uc?id=1YMo2BkbuqCwoRi6-XfT0P5SIWyf82VEE
 effnet_url = "https://drive.google.com/uc?id=1xsk9pUCAQuztZyaa5UJwAq4cwxChUIfl"
 
 
-left, middle, right = st.columns([1,5,1])
+left, middle, right = st.columns([1,4,1])
 with middle:
-         click = st.button('Predict')
+         click = st.button('Predict',use_container_width=True)
 
 # output_arr = 0
 # class_name_predicted = ""
