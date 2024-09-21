@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from Ensemble_functions import output_label,ensemble_output,image_preprocess,load_models
 from PIL import Image
+import gdown
 
 st.title('🧠 Brain Tumour Image Classification')
 
