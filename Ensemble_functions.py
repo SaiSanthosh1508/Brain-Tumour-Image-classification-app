@@ -7,9 +7,8 @@ import seaborn as sns
 def image_preprocess(image):
     # Convert NumPy array to TensorFlow tensor
     image = tf.convert_to_tensor(image, dtype=tf.float32)
-    if(len(image.shape) == 2){
-        image = tf.expand_dims(image,axis=-1)
-    }
+    if len(image.shape) == 2:
+        image = tf.expand_dims(image, axis=-1)
     # If the image is grayscale, convert to RGB
     if image.shape[-1] == 1:  # Check if it's grayscale
         image = tf.image.grayscale_to_rgb(image)
