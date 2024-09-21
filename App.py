@@ -9,8 +9,8 @@ from PIL import Image
 import gdown
 
 st.title('🧠 NeuroClassify')
-
-st.subheader("Description")
+st.subheader('An approach that incorporates the power of deep learning Ensembles to identify Brain Tumours from the images')
+st.header("Description")
 st.write("This is mult-label image classification model, Given an image the model classifies it into\n\n"\
          "\n1. Glioma\n2. Meningioma\n 3. No Tumour\n 4. Pituitary")
 
@@ -26,14 +26,14 @@ st.write("This is mult-label image classification model, Given an image the mode
 
 
 st.divider()
-st.subheader('Data Visualization')
+st.header('Data Visualization')
 on = st.toggle("View data distribution")
 data_df = pd.DataFrame(data={'Glioma':5284,'Meningioma':5356,"No Tumour":5828,"Pituitary":6380},index=[0])
 
 if on:
     st.bar_chart(data=data_df,color=['#06C','#4CB140','#009596','#F0AB00'],stack=False)
 
-st.subheader('Upload the image')
+st.header('Upload the image')
 file = st.file_uploader(label='Image file',
                  label_visibility='hidden'
                  ,type=['png', 'jpg','jpeg'])
