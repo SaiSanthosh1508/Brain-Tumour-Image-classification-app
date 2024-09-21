@@ -8,7 +8,7 @@ from Ensemble_functions import output_label,ensemble_output,image_preprocess,loa
 from PIL import Image
 import gdown
 
-st.title('🧠 Brain Tumour Image Classification')
+st.title('🧠 NeuroClassify')
 
 st.subheader("Description")
 st.write("This is mult-label image classification model, Given an image the model classifies it into\n\n"\
