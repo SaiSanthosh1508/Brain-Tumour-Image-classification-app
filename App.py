@@ -10,15 +10,15 @@ import gdown
 
 st.title('🧠 NeuroClassify')
 st.subheader('An approach that incorporates the power of deep learning Ensembles to identify Brain Tumours from the images')
-st.subheader("Description")
+st.header("Description")
 # st.write("This is mult-label image classification model, Given an image the model classifies it into\n\n"\
 #          "\n1. Glioma\n2. Meningioma\n 3. No Tumour\n 4. Pituitary")
 
 st.markdown('''
-         <h2>1.Glioma</h2>
-         <h3>Description:</h3> Gliomas are a type of tumor that occurs in the brain and spinal cord. These tumors originate from glial cells, which support and protect neurons. Gliomas can vary in aggressiveness, ranging from low-grade (slow-growing) to high-grade (fast-growing and malignant).
-<h3>Common Symptoms:</h3> Headaches, seizures, nausea, memory problems, or speech issues, depending on the location of the tumor.
-<h3>Treatment:</h3> Treatment options include surgery, radiation therapy, and chemotherapy.
+         <h3>1.Glioma</h3>
+         <h4>Description:</h4> Gliomas are a type of tumor that occurs in the brain and spinal cord. These tumors originate from glial cells, which support and protect neurons. Gliomas can vary in aggressiveness, ranging from low-grade (slow-growing) to high-grade (fast-growing and malignant).
+         <h4>Common Symptoms:</h4> Headaches, seizures, nausea, memory problems, or speech issues, depending on the location of the tumor.
+         <h4>Treatment:</h4> Treatment options include surgery, radiation therapy, and chemotherapy.
          ''',unsafe_allow_html = True
 )
 # st.divider()
