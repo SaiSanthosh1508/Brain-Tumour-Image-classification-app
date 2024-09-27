@@ -14,7 +14,7 @@ st.write(" ")
 st.subheader("Description")
 
 # Glioma
-with st.expander(st.subheader("1. Glioma")):
+with st.expander('<p style="font-size:24px;">2. Meningioma</p>', unsafe_allow_html=True)):
     st.markdown('''
     <h4>Description:</h4> 
     Gliomas are a type of tumor that occurs in the brain and spinal cord. These tumors originate from glial cells, which support and protect neurons. Gliomas can vary in aggressiveness, ranging from low-grade (slow-growing) to high-grade (fast-growing and malignant).
@@ -27,7 +27,7 @@ with st.expander(st.subheader("1. Glioma")):
     ''', unsafe_allow_html=True)
 
 # Meningioma
-with st.expander(st.subheader("2. Meningioma")):
+with st.expander(st.subheader('<p style="font-size:24px;">2. Meningioma</p>', unsafe_allow_html=True)):
     st.markdown('''
     <h4>Description:</h4> 
     Meningiomas are tumors that develop in the meninges, the protective layers of tissue covering the brain and spinal cord. Most meningiomas are benign (non-cancerous), though they can cause significant problems if they grow large enough to press on the brain.
@@ -40,7 +40,7 @@ with st.expander(st.subheader("2. Meningioma")):
     ''', unsafe_allow_html=True)
 
 # Pituitary Tumor
-with st.expander(st.subheader("3. Pituitary Tumor")):
+with st.expander('<p style="font-size:24px;">2. Meningioma</p>', unsafe_allow_html=True)):
     st.markdown('''
     <h4>Description:</h4> 
     Pituitary tumors form in the pituitary gland, located at the base of the brain. These tumors can affect hormone production, leading to various symptoms. Most pituitary tumors are benign and can be functioning (hormone-producing) or non-functioning.
@@ -53,7 +53,7 @@ with st.expander(st.subheader("3. Pituitary Tumor")):
     ''', unsafe_allow_html=True)
 
 # No Tumor
-with st.expander(st.subheader("4. No Tumor")):
+with st.expander('<p style="font-size:24px;">2. Meningioma</p>', unsafe_allow_html=True)):
     st.markdown('''
     <h4>Description:</h4> 
     This category indicates that the brain scan does not show the presence of any tumor. The image appears to be free from abnormalities related to brain tumors.
