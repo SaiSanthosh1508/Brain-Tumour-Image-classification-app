@@ -143,7 +143,7 @@ if click:
              st.subheader(" ")
 
          
-         st.success(f"Prediction: {class_name_predicted}")
+         # st.success(f"Prediction: {class_name_predicted}")
          st.markdown(f'''
     <div style="
         background-color: #d4edda;
@@ -153,7 +153,7 @@ if click:
         font-size: 24px;
         border: 1px solid #c3e6cb;
         ">
-        <strong>Success:</strong> Prediction: {class_name_predicted}
+        <strong>Prediction:</strong>  {class_name_predicted}
     </div>
 ''', unsafe_allow_html=True)
 
