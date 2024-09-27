@@ -105,7 +105,6 @@ xception_url = "https://drive.google.com/uc?id=1YMo2BkbuqCwoRi6-XfT0P5SIWyf82VEE
 # xception_url = "https://drive.google.com/uc?id=1M1Sv0mIFN9_5UGVth8Lx_gQxCYwvOeFh" latest model need fixes
 effnet_url = "https://drive.google.com/uc?id=1xsk9pUCAQuztZyaa5UJwAq4cwxChUIfl"
 
-st.header(" ")
 
 
 left, middle, right = st.columns([1,4,1])
