@@ -14,7 +14,7 @@ st.header("Description")
 # st.write("This is mult-label image classification model, Given an image the model classifies it into\n\n"\
 #          "\n1. Glioma\n2. Meningioma\n 3. No Tumour\n 4. Pituitary")
 
-st.write(f"**{1.Glioma}**")
+st.write(f" **{1.Glioma}** ")
 
 # st.divider()
 # st.subheader('Download the images the model has trained on')
