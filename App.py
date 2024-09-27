@@ -131,15 +131,16 @@ if click:
          st.subheader('Output Probability')
          with st.spinner('Predicting.....'):
                  output_arr,class_name_predicted = ensemble_output(model_input,densenet,vgg19,xception,effnet)
-         st.metric(label="Glioma", value=f"{output_arr[0] * 100:.2f}%")
-         st.progress(output_arr[0])
-         st.metric(label="Meningioma", value=f"{output_arr[1] * 100:.2f}%")
-         st.progress(output_arr[1])
-         st.metric(label="No Tumour", value=f"{output_arr[2] * 100:.2f}%")
-         st.progress(output_arr[2])
-         st.metric(label="Pituitary", value=f"{output_arr[3] * 100:.2f}%")
-         st.progress(output_arr[3])
-         st.subheader(" ")
+         with st.expander("View Output Probabilities"):
+             st.metric(label="Glioma", value=f"{output_arr[0] * 100:.2f}%")
+             st.progress(output_arr[0])
+             st.metric(label="Meningioma", value=f"{output_arr[1] * 100:.2f}%")
+             st.progress(output_arr[1])
+             st.metric(label="No Tumour", value=f"{output_arr[2] * 100:.2f}%")
+             st.progress(output_arr[2])
+             st.metric(label="Pituitary", value=f"{output_arr[3] * 100:.2f}%")
+             st.progress(output_arr[3])
+             st.subheader(" ")
 
          
          st.success(f"Prediction: {class_name_predicted}")
