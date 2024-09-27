@@ -13,7 +13,7 @@ st.write('An approach that incorporates the power of deep learning Ensembles to 
 st.write(" ")
 st.subheader("Description")
 
-col1,col2,col3,col4 = st.columns([1,2,2,1])
+col1,col2,col3,col4 = st.columns([1,3,3,1])
 # Glioma
 with col2:
     with st.expander("1. Glioma"):
