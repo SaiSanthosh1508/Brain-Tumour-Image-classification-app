@@ -53,7 +53,7 @@ with st.expander("3. Pituitary Tumor"):
     ''', unsafe_allow_html=True)
 
 # No Tumor
-with st.expander("4. No Tumor"):
+with st.expander(st.subheader("4. No Tumor")):
     st.markdown('''
     <h4>Description:</h4> 
     This category indicates that the brain scan does not show the presence of any tumor. The image appears to be free from abnormalities related to brain tumors.
