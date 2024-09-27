@@ -10,12 +10,10 @@ import gdown
 
 st.title('🧠 NeuroClassify')
 st.subheader('An approach that incorporates the power of deep learning Ensembles to identify Brain Tumours from the images')
-st.header("Description")
-# st.write("This is mult-label image classification model, Given an image the model classifies it into\n\n"\
-#          "\n1. Glioma\n2. Meningioma\n 3. No Tumour\n 4. Pituitary")
+print()
+st.subheader("Description")
 
-import streamlit as st
-
+# Glioma
 with st.expander("1. Glioma"):
     st.markdown('''
     <h4>Description:</h4> 
@@ -27,6 +25,44 @@ with st.expander("1. Glioma"):
     <h4>Treatment:</h4> 
     Treatment options include surgery, radiation therapy, and chemotherapy.
     ''', unsafe_allow_html=True)
+
+# Meningioma
+with st.expander("2. Meningioma"):
+    st.markdown('''
+    <h4>Description:</h4> 
+    Meningiomas are tumors that develop in the meninges, the protective layers of tissue covering the brain and spinal cord. Most meningiomas are benign (non-cancerous), though they can cause significant problems if they grow large enough to press on the brain.
+    
+    <h4>Common Symptoms:</h4> 
+    Headaches, vision problems, hearing loss, or seizures, depending on the tumor's location.
+    
+    <h4>Treatment:</h4> 
+    Treatment often involves surgery, and in some cases, radiation therapy may be used.
+    ''', unsafe_allow_html=True)
+
+# Pituitary Tumor
+with st.expander("3. Pituitary Tumor"):
+    st.markdown('''
+    <h4>Description:</h4> 
+    Pituitary tumors form in the pituitary gland, located at the base of the brain. These tumors can affect hormone production, leading to various symptoms. Most pituitary tumors are benign and can be functioning (hormone-producing) or non-functioning.
+    
+    <h4>Common Symptoms:</h4> 
+    Hormonal imbalances, vision problems, fatigue, or unexplained weight changes.
+    
+    <h4>Treatment:</h4> 
+    Treatment includes medication to manage hormone levels, surgery to remove the tumor, and sometimes radiation therapy.
+    ''', unsafe_allow_html=True)
+
+# No Tumor
+with st.expander("4. No Tumor"):
+    st.markdown('''
+    <h4>Description:</h4> 
+    This category indicates that the brain scan does not show the presence of any tumor. The image appears to be free from abnormalities related to brain tumors.
+    
+    <h4>Implications:</h4> 
+    While this category suggests no tumor, it’s important for users to seek medical advice to confirm the results and ensure no other neurological conditions are present.
+    ''', unsafe_allow_html=True)
+
+
 
 # st.divider()
 # st.subheader('Download the images the model has trained on')
