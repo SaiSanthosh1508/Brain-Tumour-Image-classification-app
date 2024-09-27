@@ -12,7 +12,7 @@ st.title('🧠 NeuroClassify')
 st.write('An approach that incorporates the power of deep learning Ensembles to identify Brain Tumours from the images')
 st.subheader("Description")
 st.write("")
-col1,col2,col3,col4 = st.columns([1,3,3,1])
+col1,col2,col3,col4 = st.columns([1,4,4,1])
 # Glioma
 with col2:
     with st.expander("1. Glioma"):
