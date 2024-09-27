@@ -14,13 +14,13 @@ st.header("Description")
 # st.write("This is mult-label image classification model, Given an image the model classifies it into\n\n"\
 #          "\n1. Glioma\n2. Meningioma\n 3. No Tumour\n 4. Pituitary")
 
-st.markdown('''
+st.expander(st.markdown('''
          <h3>1.Glioma</h3>
          <h4>Description:</h4> Gliomas are a type of tumor that occurs in the brain and spinal cord. These tumors originate from glial cells, which support and protect neurons. Gliomas can vary in aggressiveness, ranging from low-grade (slow-growing) to high-grade (fast-growing and malignant).
          <h4>Common Symptoms:</h4> Headaches, seizures, nausea, memory problems, or speech issues, depending on the location of the tumor.
          <h4>Treatment:</h4> Treatment options include surgery, radiation therapy, and chemotherapy.
          ''',unsafe_allow_html = True
-)
+))
 # st.divider()
 # st.subheader('Download the images the model has trained on')
 
