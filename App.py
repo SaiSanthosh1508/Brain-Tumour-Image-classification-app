@@ -13,9 +13,10 @@ st.write('An approach that incorporates the power of deep learning Ensembles to 
 st.write(" ")
 st.subheader("Description")
 
-
+col1,col2,col3,col4 = st.columns([1,1,1,1])
 # Glioma
-with st.expander("1. Glioma"):
+with col2:
+    with st.expander("1. Glioma"):
     st.markdown('''
     <h4>Description:</h4> 
     Gliomas are a type of tumor that occurs in the brain and spinal cord. These tumors originate from glial cells, which support and protect neurons. Gliomas can vary in aggressiveness, ranging from low-grade (slow-growing) to high-grade (fast-growing and malignant).
@@ -28,7 +29,8 @@ with st.expander("1. Glioma"):
     ''', unsafe_allow_html=True)
 
 # Meningioma
-with st.expander("2. Meningioma"):
+with col3:
+    with st.expander("2. Meningioma"):
     st.markdown('''
     <h4>Description:</h4> 
     Meningiomas are tumors that develop in the meninges, the protective layers of tissue covering the brain and spinal cord. Most meningiomas are benign (non-cancerous), though they can cause significant problems if they grow large enough to press on the brain.
@@ -41,7 +43,8 @@ with st.expander("2. Meningioma"):
     ''', unsafe_allow_html=True)
 
 # Pituitary Tumor
-with st.expander("3. Pituitary Tumor"):
+with col2:
+    with st.expander("3. Pituitary Tumor"):
     st.markdown('''
     <h4>Description:</h4> 
     Pituitary tumors form in the pituitary gland, located at the base of the brain. These tumors can affect hormone production, leading to various symptoms. Most pituitary tumors are benign and can be functioning (hormone-producing) or non-functioning.
@@ -54,7 +57,8 @@ with st.expander("3. Pituitary Tumor"):
     ''', unsafe_allow_html=True)
 
 # No Tumor
-with st.expander("4. No Tumor"):
+with col3:
+    with st.expander("4. No Tumor"):
     st.markdown('''
     <h4>Description:</h4> 
     This category indicates that the brain scan does not show the presence of any tumor. The image appears to be free from abnormalities related to brain tumors.
