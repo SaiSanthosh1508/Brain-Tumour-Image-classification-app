@@ -143,7 +143,22 @@ if click:
              st.subheader(" ")
 
          
-         st.success(f"Prediction: {class_name_predicted}")
+         # st.success(f"Prediction: {class_name_predicted}")
+         
+        # Custom success message with larger font size and styling
+        st.markdown(f'''
+    <div style="
+        background-color: #d4edda;
+        color: #155724;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 24px;
+        border: 1px solid #c3e6cb;
+        ">
+        <strong>Success:</strong> Prediction: {class_name_predicted}
+    </div>
+''', unsafe_allow_html=True)
+
 
          
 
