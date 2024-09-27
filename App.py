@@ -63,6 +63,61 @@ with st.expander("4. No Tumor"):
     ''', unsafe_allow_html=True)
 
 
+import streamlit as st
+
+# Create two columns
+col1, col2 = st.columns(2)
+
+# Arrange expanders in the first column
+with col1:
+    with st.expander("1. Glioma"):
+        st.markdown('''
+        <h4>Description:</h4> 
+        Gliomas are a type of tumor that occurs in the brain and spinal cord. These tumors originate from glial cells, which support and protect neurons. Gliomas can vary in aggressiveness, ranging from low-grade (slow-growing) to high-grade (fast-growing and malignant).
+        
+        <h4>Common Symptoms:</h4> 
+        Headaches, seizures, nausea, memory problems, or speech issues, depending on the location of the tumor.
+        
+        <h4>Treatment:</h4> 
+        Treatment options include surgery, radiation therapy, and chemotherapy.
+        ''', unsafe_allow_html=True)
+
+    with st.expander("2. Meningioma"):
+        st.markdown('''
+        <h4>Description:</h4> 
+        Meningiomas are tumors that develop in the meninges, the protective layers of tissue covering the brain and spinal cord. Most meningiomas are benign (non-cancerous), though they can cause significant problems if they grow large enough to press on the brain.
+        
+        <h4>Common Symptoms:</h4> 
+        Headaches, vision problems, hearing loss, or seizures, depending on the tumor's location.
+        
+        <h4>Treatment:</h4> 
+        Treatment often involves surgery, and in some cases, radiation therapy may be used.
+        ''', unsafe_allow_html=True)
+
+# Arrange expanders in the second column
+with col2:
+    with st.expander("3. Pituitary Tumor"):
+        st.markdown('''
+        <h4>Description:</h4> 
+        Pituitary tumors form in the pituitary gland, located at the base of the brain. These tumors can affect hormone production, leading to various symptoms. Most pituitary tumors are benign and can be functioning (hormone-producing) or non-functioning.
+        
+        <h4>Common Symptoms:</h4> 
+        Hormonal imbalances, vision problems, fatigue, or unexplained weight changes.
+        
+        <h4>Treatment:</h4> 
+        Treatment includes medication to manage hormone levels, surgery to remove the tumor, and sometimes radiation therapy.
+        ''', unsafe_allow_html=True)
+
+    with st.expander("4. No Tumor"):
+        st.markdown('''
+        <h4>Description:</h4> 
+        This category indicates that the brain scan does not show the presence of any tumor. The image appears to be free from abnormalities related to brain tumors.
+        
+        <h4>Implications:</h4> 
+        While this category suggests no tumor, it’s important for users to seek medical advice to confirm the results and ensure no other neurological conditions are present.
+        ''', unsafe_allow_html=True)
+
+
 
 # st.divider()
 # st.subheader('Download the images the model has trained on')
