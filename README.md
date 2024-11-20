@@ -7,3 +7,4 @@ The application utilizes a weight-aware decision mechanism, i.e., it utilizes fo
 <img src="https://github.com/user-attachments/assets/fcb6727e-85a0-4715-9c4e-b72bd81e573d" alt="workflow" width="800">
 
 
+Dataset Link: <a>https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset</a>
