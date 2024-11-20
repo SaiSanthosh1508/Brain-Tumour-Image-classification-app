@@ -4,4 +4,4 @@ The application utilizes a weight-aware decision mechanism, i.e., it utilizes fo
 
 <img src="https://github.com/user-attachments/assets/fcb6727e-85a0-4715-9c4e-b72bd81e573d" alt="workflow" width="800">
 
-<a href="https://brain-tumour-image-classification-application-210924.streamlit.app/"><button>Open App 🚀</button></a>
+<button><a href="https://brain-tumour-image-classification-application-210924.streamlit.app/">Open App 🚀</a></button>
